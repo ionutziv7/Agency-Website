@@ -1,0 +1,32 @@
+@import "./variables";
+
+.btn {
+  overflow: hidden;
+}
+
+.main-btn {
+  background: $color-gradient-primary-3;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  .btn-circle {
+    position: absolute;
+    top: 5px;
+    right: -55%;
+    height: 180px;
+    width: 180px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    transition: all 0.4s cubic-bezier(0.21, 0.69, 0.73 1.08);
+  }
+  &:hover {
+    .btn-circle {
+      right: -30%;
+      top: -15px;
+    }
+  }
+}
