@@ -19,6 +19,26 @@ body {
   position: relative;
 }
 
+// Custom scrollbar
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $color-bg;
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: $color-gradient-primary-3;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  background: $color-gradient-primary-2;
+}
+
 p {
   color: $color-font;
   font-weight: 500;

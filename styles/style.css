@@ -230,14 +230,14 @@
 }
 
 .u-pad-lg {
-  padding: 8rem 15rem;
+  padding: 8rem 12rem;
 }
 
 .u-pad-lg-2 {
   padding-top: 1rem;
-  padding-right: 15rem;
+  padding-right: 12rem;
   padding-bottom: 6rem;
-  padding-left: 15rem;
+  padding-left: 12rem;
 }
 
 .u-cta-btn {
@@ -342,6 +342,25 @@ body {
   color: #ffffff;
   background-color: #101010;
   position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #101010;
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(300.81deg, #554dde -17.99%, #f44e77 111.32%, #f44e77 111.32%);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  background: linear-gradient(171.21deg, #554dde -10.74%, #f44e77 112.82%, #f44e77 112.82%);
 }
 
 p {
