@@ -215,8 +215,8 @@
   }
   .latest-controls {
     display: flex;
-    justify-content: center;  
-    margin-top: 2.5rem; 
+    justify-content: center;
+    margin-top: 2.5rem;
     .control {
       width: 1rem;
       height: 1rem;
@@ -234,6 +234,81 @@
     .control-3 {
       background-color: $color-grey-9;
       transform: scale(0.6);
+    }
+  }
+}
+
+// Blogs section
+.section-blogs {
+  .blogs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    padding-top: 3rem;
+    .blog-item {
+      background-color: $color-grey-light;
+      border-radius: 7px;
+      font-size: 1rem;
+      border: 2px solid $color-grey-9;
+      transition: $transition;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 10px 10px 0px #f8f9fa14;
+        transform: translateY(-5px);
+      }
+      .image {
+        position: relative;
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 220px;
+          border-top-right-radius: 7px;
+          border-top-left-radius: 7px;
+        }
+        .image-content {
+          position: absolute;
+          bottom: -13px;
+          left: 50%;
+          width: 90%;
+          transform: translate(-50%);
+          background: $color-gradient-primary-3;
+          display: flex;
+          justify-content: space-between;
+          padding: 0.5rem 1rem;
+          border-radius: 30px;
+        }
+      }
+
+      .blog-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        h5 {
+          font-size: 1.5rem;
+          padding-bottom: 1.5rem;
+          cursor: pointer;
+          transition: $transition;
+          &:hover {
+            color: $color-accent;
+          }
+        }
+        p {
+          padding-bottom: 1.5rem;
+          font-size: 1.2rem;
+        }
+        .blog-icons {
+          display: flex;
+          align-items: center;
+          padding-top: 1.5rem;
+          border-top: 1px solid $color-grey-4;
+          i {
+            margin: 0 0.3rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }

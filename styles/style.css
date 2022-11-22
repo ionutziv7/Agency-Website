@@ -484,6 +484,78 @@
   transform: scale(0.6);
 }
 
+.section-blogs .blogs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  padding-top: 3rem;
+}
+.section-blogs .blogs-container .blog-item {
+  background-color: #191919;
+  border-radius: 7px;
+  font-size: 1rem;
+  border: 2px solid rgba(33, 37, 41, 0.7176470588);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.section-blogs .blogs-container .blog-item:hover {
+  box-shadow: 10px 10px 0px rgba(248, 249, 250, 0.0784313725);
+  transform: translateY(-5px);
+}
+.section-blogs .blogs-container .blog-item .image {
+  position: relative;
+}
+.section-blogs .blogs-container .blog-item .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 220px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+.section-blogs .blogs-container .blog-item .image .image-content {
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%);
+  background: linear-gradient(300.81deg, #554dde -17.99%, #f44e77 111.32%, #f44e77 111.32%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+.section-blogs .blogs-container .blog-item .blog-text {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.section-blogs .blogs-container .blog-item .blog-text h5 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.section-blogs .blogs-container .blog-item .blog-text h5:hover {
+  color: #f44e77;
+}
+.section-blogs .blogs-container .blog-item .blog-text p {
+  padding-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.section-blogs .blogs-container .blog-item .blog-text .blog-icons {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ced4da;
+}
+.section-blogs .blogs-container .blog-item .blog-text .blog-icons i {
+  margin: 0 0.3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
 .title {
   font-size: 2.5rem;
   font-weight: 700;
