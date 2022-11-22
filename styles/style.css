@@ -423,6 +423,67 @@
   padding-bottom: 2rem;
 }
 
+.section-latest .latest-container {
+  margin-top: 1.5rem;
+  background-color: #1d1d1d;
+  border-radius: 7px;
+}
+.section-latest .latest-container .latest-content {
+  display: grid;
+  grid-template-columns: 40% auto;
+  padding: 5rem 10rem;
+  grid-gap: 2rem;
+}
+.section-latest .latest-container .latest-content img {
+  width: 100%;
+  border-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-latest .latest-container .latest-content .latest-text {
+  margin-left: 3rem;
+}
+.section-latest .latest-container .latest-content .latest-text h4 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+.section-latest .latest-container .latest-content .latest-text h6 {
+  padding-bottom: 1.6rem;
+  font-size: 1.2rem;
+  color: #a2a2a2;
+}
+.section-latest .latest-container .latest-content .latest-text p {
+  padding-bottom: 1.5rem;
+}
+.section-latest .latest-container .latest-content .latest-text a {
+  background: transparent;
+  border: 2px solid #ced4da;
+  text-transform: inherit;
+}
+.section-latest .latest-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.section-latest .latest-controls .control {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+.section-latest .latest-controls .control-1 {
+  background-color: #f44e77;
+}
+.section-latest .latest-controls .control-2 {
+  background-color: rgba(33, 37, 41, 0.7176470588);
+  transform: scale(0.85);
+}
+.section-latest .latest-controls .control-3 {
+  background-color: rgba(33, 37, 41, 0.7176470588);
+  transform: scale(0.6);
+}
+
 .title {
   font-size: 2.5rem;
   font-weight: 700;
