@@ -186,6 +186,12 @@
       grid-template-columns: 40% auto;
       padding: 5rem 10rem;
       grid-gap: 2rem;
+      @media screen and (max-width: 1485px) {
+        padding: 4rem 2rem;
+      }
+      @media screen and (max-width: 830px) {
+        grid-template-columns: 1fr;
+      }
       img {
         width: 100%;
         border-radius: 7px;
@@ -193,6 +199,9 @@
       }
       .latest-text {
         margin-left: 3rem;
+        @media screen and (max-width: 830px) {
+          margin-left: 0;
+        }
         h4 {
           font-size: 2rem;
           padding-bottom: 1.5rem;
@@ -398,6 +407,20 @@
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 400px);
+    @media screen and (max-width: 980px) {
+      grid-template-rows: repeat(2, 274px);
+    }
+    @media screen and (max-width: 700px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 274px);
+      .g-img-2 {
+        grid-column: initial;
+        grid-row: initial;
+      }
+      .g-img-3 {
+        grid-column: initial;
+      }
+    }
     .gd-img {
       width: 100%;
       height: 100%;

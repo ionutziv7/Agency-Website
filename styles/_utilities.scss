@@ -1,5 +1,11 @@
 .u-pad-lg {
   padding: 8rem 12rem;
+  @media screen and (max-width: 1380px) {
+    padding: 8rem 8rem;
+  }
+  @media screen and (max-width: 905px) {
+    padding: 4rem 4rem;
+  }
 }
 
 .u-pad-lg-2 {
@@ -7,6 +13,13 @@
   padding-right: 12rem;
   padding-bottom: 6rem;
   padding-left: 12rem;
+  @media screen and (max-width: 1380px) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  @media screen and (max-width: 905px) {
+    padding: 4rem 4rem;
+  }
 }
 
 .u-cta-btn {
