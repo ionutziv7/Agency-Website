@@ -917,11 +917,22 @@ body {
   color: #ffffff;
   background-color: #101010;
   position: relative;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 450px) {
   body {
     font-size: 1rem;
   }
+}
+
+.page-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: #000;
 }
 
 body::-webkit-scrollbar {
