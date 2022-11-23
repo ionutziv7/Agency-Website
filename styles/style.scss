@@ -11,12 +11,21 @@
   list-style: none;
 }
 
+html {
+  @media screen and (max-width: 450px) {
+    font-size: 80%;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: $color-white;
   background-color: $color-bg;
   position: relative;
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
 }
 
 // Custom scrollbar
